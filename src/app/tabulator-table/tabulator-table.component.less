@@ -1,0 +1,41 @@
+//Tabulator styles override
+
+.tabulator {
+  font-size: 12px;
+  border: none;
+
+  .tabulator-header {
+     font-weight: normal;
+     border-bottom: 1px solid;
+     border-bottom-color: rgba(0, 0, 0, 0.12);
+     color: rgba(0, 0, 0, 0.54);
+
+     .tabulator-col {
+        height: 48px;
+        background-color: #ffffff;
+        border: none;
+        padding: 0 7px;
+     }
+  }
+
+  .tabulator-row {
+     border-bottom: 1px solid;
+     border-bottom-color: rgba(0, 0, 0, 0.12);
+     min-height: 48px;
+     vertical-align: middle;
+
+     .tabulator-cell {
+        padding: 16px 7px;
+        border-right: none;
+        vertical-align: middle;
+     }
+
+     &:first-of-type {
+        padding-left: 24px;
+     }
+
+     &.tabulator-row-even {
+        background-color: #ffffff;
+     }
+  }
+}
